@@ -88,3 +88,26 @@ Verificar que un usuario sin permiso de eliminación no pueda eliminar materias.
 
 **Resultado esperado:**  
 El usuario debe poder visualizar, crear y modificar materias, pero no debe tener disponible la opción de eliminación ni poder eliminar registros.
+
+# Ejecución de Pruebas Automatizadas
+
+**Framework:** Django TestCase  
+**Lenguaje:** Python  
+**Entorno:** Local  
+**Ejecutor:** Pablo Oviedo Martínez  
+
+## Casos automatizados
+
+- MAT-001 — Creación de materia válida → PASS ✅
+- MAT-002 — Validación de código duplicado → PASS ✅
+- MAT-005 — Validación de longitud máxima del código → PASS ✅
+- FAC-001 — Eliminación en cascada e integridad referencial → PASS ✅
+- USR-001 — Validación de permisos de eliminación → PASS ✅
+
+## Resultado
+
+**Tests ejecutados:** 5  
+**PASS:** 5  
+**FAIL:** 0  
+
+La suite automatizada finalizó correctamente sin errores.
