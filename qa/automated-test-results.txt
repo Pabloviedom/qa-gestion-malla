@@ -1,0 +1,48 @@
+Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Found 5 test(s).
+Operations to perform:
+  Synchronize unmigrated apps: jazzmin, messages, staticfiles
+  Apply all migrations: academico, admin, auth, contenttypes, sessions
+Synchronizing apps without migrations:
+  Creating tables...
+    Running deferred SQL...
+Running migrations:
+  Applying academico.0001_initial... OK
+  Applying academico.0002_alter_facultad_options_alter_carrera_facultad_and_more... OK
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial...test_fac_001_eliminacion_en_cascada (academico.tests.IntegridadReferencialTests.test_fac_001_eliminacion_en_cascada)
+Verifica que al eliminar una Facultad: ... ok
+test_mat_001_crear_materia_valida (academico.tests.MateriaTests.test_mat_001_crear_materia_valida)
+Verifica que se pueda crear una materia con datos válidos. ... ok
+test_mat_002_codigo_duplicado_no_permitido (academico.tests.MateriaTests.test_mat_002_codigo_duplicado_no_permitido)
+Verifica que no se puedan registrar dos materias ... ok
+test_mat_005_codigo_superior_a_20_caracteres (academico.tests.MateriaTests.test_mat_005_codigo_superior_a_20_caracteres)
+Verifica que la validación del modelo rechace ... ok
+test_usr_001_usuario_sin_permiso_no_puede_eliminar (academico.tests.PermisosMateriaTests.test_usr_001_usuario_sin_permiso_no_puede_eliminar)
+Verifica que un usuario staff sin permiso delete_materia ... /Users/pabloviedom/Documents/GitHub/qa-gestion-malla/venv/lib/python3.14/site-packages/django/core/handlers/base.py:62: UserWarning: No directory at: /Users/pabloviedom/Documents/GitHub/qa-gestion-malla/staticfiles/
+  mw_instance = middleware(adapted_handler)
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.258s
+
+OK
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+ OK
+System check identified no issues (0 silenced).
