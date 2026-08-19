@@ -111,3 +111,8 @@ El usuario debe poder visualizar, crear y modificar materias, pero no debe tener
 **FAIL:** 0  
 
 La suite automatizada finalizó correctamente sin errores.
+
+**Resultado obtenido:**  
+El usuario pudo visualizar, crear y modificar materias. La opción de eliminación no estuvo disponible debido a que no poseía el permiso correspondiente.
+
+**Estado:** PASS
